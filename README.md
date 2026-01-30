@@ -42,7 +42,7 @@ The lab emulates a production-like environment including endpoints, servers, VPN
 
 ## 🏗️ Architecture & Env. Formation
 
-[pic]
+<img height="500" src="https://github.com/mello-io/Project-HIKE/blob/main/Project%20Hike.drawio.png" alt="Project Network Diag"/>
 
 Infrastructure Components;
 
