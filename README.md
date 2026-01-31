@@ -46,41 +46,35 @@ The lab emulates a production-like environment including endpoints, servers, VPN
 
 Infrastructure Components;
 
-Endpoint Subnet
-- Windows 10 endpoint
-- Windows 11 endpoint
-- Wazuh agents deployed on all endpoints
-<br>
+- Endpoint Subnet
+  - Windows 10 endpoint
+  - Windows 11 endpoint
+  - Wazuh agents deployed on all endpoints
 
-Server & Management Layer
-- ESXi Server (virtualized workloads)
-- ESXi Host (internal compute)
-- Web Server (application-facing services)
-- SQL Server (data layer)
-<br>
+- Server & Management Layer
+  - ESXi Server (virtualized workloads)
+  - ESXi Host (internal compute)
+  - Web Server (application-facing services)
+  - SQL Server (data layer)
 
-Network Security
-- Palo Alto Firewall enforcing inter-subnet access
-- Internal routing & traffic inspection
-- Explicit ingress/egress control between zones
-<br>
+- Network Security
+  - Palo Alto Firewall enforcing inter-subnet access
+  - Internal routing & traffic inspection
+  - Explicit ingress/egress control between zones
 
-Access Control
-- VPN (0-Tier) for remote administrative access
-- RDP Jump Server for controlled internal access
-- No direct endpoint exposure from external networks
-<br>
+- Access Control
+  - VPN (0-Tier) for remote administrative access
+  - RDP Jump Server for controlled internal access
+  - No direct endpoint exposure from external networks
 
-Red Team Subnet
-- Kali Linux attack host
-- MITRE Caldera for adversary emulation
-<br>
+- Red Team Subnet
+  - Kali Linux attack host
+  - MITRE Caldera for adversary emulation
 
-Blue Team Subnet
-- Wazuh Server (SIEM)
-- SOC workstation
-- Centralized logging and alert correlation
-<br>
+- Blue Team Subnet
+  - Wazuh Server (SIEM)
+  - SOC workstation
+  - Centralized logging and alert correlation
 
 > Design Principle: All attack paths are forced through firewall-controlled choke points to ensure full observability.
 
